@@ -22,24 +22,46 @@ class TelaBotaoPulsante extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.blueGrey,
         title:const Text(
-          'Botão Pulsante',
-          textAlign: TextAlign.center,
+          'Botão Pulsante.'
           ),
         ),
         body: Center(
-          child: BotaoPulsante(
-            onPressed: (){
-              ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Botão Pulsante Pressionado!'
-                ),
-              )
-              );
-            }
+          child: Column(
+            children: <Widget>[
+            const SizedBox(height: 300),
+            BotaoPulsante(
+              onPressed: (){
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                  content: Text('Botão Pulsante Pressionado!'
+                    ),
+                  )
+                );
+              }
+            ),
+            SizedBox(height: 400),
+            const Text(
+                    'Luiz Felipe Bastião', 
+                    style: TextStyle(
+                    color: Colors.white,
+                    fontSize:20,
+                    ),
+              ),
+            const Text(
+                  'João Victor Pires Novais',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize:20,
+                    ),
+            ),
+            ],
           )
-        )
+          
+        ),
+          
         );
   }
 }
@@ -91,11 +113,6 @@ class _BotaoPulsanteState extends State<BotaoPulsante>
             _controller.reverse();
           });
         },
-        child: const Text('Pressione-me!', 
-        style:TextStyle(
-          color: Colors.white,
-           fontSize: 20),
-        ),
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.red,
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
@@ -103,6 +120,11 @@ class _BotaoPulsanteState extends State<BotaoPulsante>
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
+        ),
+        child: const Text('Pressione-me!', 
+        style:TextStyle(
+          color: Colors.white,
+           fontSize: 20),
         ),
       ),
     );
