@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/BotaoPulsante.dart';
 
 void main() => runApp(const MyApp());
 
@@ -18,115 +19,37 @@ class TelaBotaoPulsante extends StatelessWidget {
   const TelaBotaoPulsante({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.blueGrey,
-        title:const Text(
-          'Botão Pulsante.'
-          ),
-        ),
-        body: Center(
-          child: Column(
-            children: <Widget>[
+        title: const Text('Botão Pulsante.'),
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
             const SizedBox(height: 300),
             BotaoPulsante(
-              onPressed: (){
+              onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                  content: Text('Botão Pulsante Pressionado!'
-                    ),
-                  )
+                  const SnackBar(content: Text('Botão Pulsante Pressionado!')),
                 );
-              }
+              },
             ),
             SizedBox(height: 400),
             const Text(
-                    'Luiz Felipe Bastião', 
-                    style: TextStyle(
-                    color: Colors.white,
-                    fontSize:20,
-                    ),
-              ),
-            const Text(
-                  'João Victor Pires Novais',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize:20,
-                    ),
+              'Luiz Felipe Bastião',
+              style: TextStyle(color: Colors.white, fontSize: 20),
             ),
-            ],
-          )
-          
-        ),
-          
-        );
-  }
-}
-
-class BotaoPulsante extends StatefulWidget {
-  final VoidCallback onPressed;
-
-  const BotaoPulsante({super.key, required this.onPressed});
-
-  @override
-  State<BotaoPulsante> createState() => _BotaoPulsanteState();
-}
-
-class _BotaoPulsanteState extends State<BotaoPulsante> 
-  with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 1),
-    )..repeat(reverse: true);
-    _animation = Tween<double>(begin: 0.8, end: 1.2).animate(
-    CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeInOut,
-      ),
-    );
-  }
-
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return ScaleTransition(
-      scale: _animation,
-      child: ElevatedButton(
-        onPressed: () {
-          _controller.forward().then((_) {
-            widget.onPressed();
-            _controller.reverse();
-          });
-        },
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.red,
-          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-          textStyle: const TextStyle(fontSize: 20),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
-        child: const Text('Pressione-me!', 
-        style:TextStyle(
-          color: Colors.white,
-           fontSize: 20),
+            const Text(
+              'João Victor Pires Novais',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
+          ],
         ),
       ),
     );
   }
-  }
+}
