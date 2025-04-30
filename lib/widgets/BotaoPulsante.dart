@@ -9,6 +9,8 @@ class BotaoPulsante extends StatefulWidget {
   State<BotaoPulsante> createState() => _BotaoPulsanteState();
 }
 
+/// Botão pulsante que aumenta e diminui de tamanho quando pressionado
+/// e executa uma ação quando pressionado.
 class _BotaoPulsanteState extends State<BotaoPulsante>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/BotaoPulsante.dart';
 
+/// Tela que exibe um botão pulsante que aumenta e diminui de tamanho
+/// quando pressionado e executa uma ação quando pressionado.
 class TelaBotaoPulsante extends StatelessWidget {
   const TelaBotaoPulsante({super.key});
 
