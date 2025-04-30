@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/BotaoPulsante.dart';
 
 class TelaBotaoPulsante extends StatelessWidget {
   const TelaBotaoPulsante({super.key});

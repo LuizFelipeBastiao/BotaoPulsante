@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pages/TelaBotaoPulsante.dart';
 import 'widgets/BotaoPulsante.dart';
-'
 
 void main() => runApp(const MyApp());
 
