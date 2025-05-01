@@ -1,16 +1,45 @@
-# aplicativo
+# Botão Pulsante – Alerta de Nova Mensagem
 
-A new Flutter project.
+Este projeto Flutter demonstra a criação de um botão animado que simula um alerta visual de nova mensagem. O botão pulsa continuamente, chamando a atenção do usuário para uma ação importante, como ler uma nova notificação.
 
-## Getting Started
+## 📌 Objetivo
 
-This project is a starting point for a Flutter application.
+Desenvolver um widget animado em Flutter utilizando:
+- `StatefulWidget` com `SingleTickerProviderStateMixin`
+- `AnimationController`, `Tween`, `ScaleTransition`
+- Animações suaves com `Curves.easeInOut`
+- Aplicação do botão pulsante em uma tela funcional
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ Instalação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Pré-requisitos:
+- [Flutter instalado](https://flutter.dev/docs/get-started/install)
+- Android Studio, VS Code ou outro editor compatível
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Passos para execução:
+
+```bash
+git clone https://github.com/LuizFelipeBastiao/botaopulsante.git
+cd botaopulsante
+flutter pub get
+flutter run
+Obs: certifique-se de conectar um emulador ou dispositivo físico antes de rodar o projeto.
+
+
+🚀 Uso
+Ao abrir o app, você verá uma tela azul com um botão vermelho animado:
+
+O botão pulsará continuamente entre 80% e 120% do seu tamanho original.
+
+Ao ser pressionado, o botão exibe uma mensagem com SnackBar, simulando a leitura de uma nova notificação.
+![image](https://github.com/user-attachments/assets/45bf7917-609d-474f-b7cc-cde300c2266f)
+
+
+💡 Captura de tela
+(Adicione uma imagem do app rodando aqui, ou use um placeholder até gerar)
+
+
+🧑‍💻 Autores
+Luiz Felipe Bastião
+
+João Victor Pires Novaes
