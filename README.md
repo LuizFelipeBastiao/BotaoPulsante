@@ -18,7 +18,6 @@ Desenvolver um widget animado em Flutter utilizando:
 
 ### Passos para execução:
 
-```bash
 git clone https://github.com/LuizFelipeBastiao/BotaoPulsante.git
 cd BotaoPulsante
 flutter pub get
