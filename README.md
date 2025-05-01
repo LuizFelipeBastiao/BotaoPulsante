@@ -38,7 +38,8 @@ Abaixo, uma prévia do funcionamento do botão pulsante animado:
 ![App rodando](assets/screenshot.png)
 
 
-🧑‍💻 Autores
+🧑‍💻 Autores:
+
 Luiz Felipe Bastião
 
 João Victor Pires Novaes
