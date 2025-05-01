@@ -19,8 +19,8 @@ Desenvolver um widget animado em Flutter utilizando:
 ### Passos para execução:
 
 ```bash
-git clone https://github.com/LuizFelipeBastiao/botaopulsante.git
-cd botaopulsante
+git clone https://github.com/LuizFelipeBastiao/BotaoPulsante.git
+cd BotaoPulsante
 flutter pub get
 flutter run
 Obs: certifique-se de conectar um emulador ou dispositivo físico antes de rodar o projeto.
@@ -31,12 +31,12 @@ Ao abrir o app, você verá uma tela azul com um botão vermelho animado:
 
 O botão pulsará continuamente entre 80% e 120% do seu tamanho original.
 
-Ao ser pressionado, o botão exibe uma mensagem com SnackBar, simulando a leitura de uma nova notificação.
-![image](https://github.com/user-attachments/assets/45bf7917-609d-474f-b7cc-cde300c2266f)
 
+## 💡 Captura de tela
 
-💡 Captura de tela
-(Adicione uma imagem do app rodando aqui, ou use um placeholder até gerar)
+Abaixo, uma prévia do funcionamento do botão pulsante animado:
+
+![App rodando](assets/screenshot.png)
 
 
 🧑‍💻 Autores
