@@ -36,7 +36,7 @@ O botão pulsará continuamente entre 80% e 120% do seu tamanho original.
 
 Abaixo, uma prévia do funcionamento do botão pulsante animado:
 
-![App rodando](assets/screenshot.png)
+![App rodando](botaopulsante/assets/screenshot.png)
 
 
 🧑‍💻 Autores
