@@ -32,7 +32,7 @@ class TelaBotaoPulsante extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
             const Text(
-              'João Victor Pires Novais',
+              'João f Victor Pires Novais',
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
           ],
